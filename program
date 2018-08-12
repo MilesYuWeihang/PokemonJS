@@ -1,0 +1,3 @@
+#!/bin/bash
+# author: Weihang Yu
+node index.js $*
