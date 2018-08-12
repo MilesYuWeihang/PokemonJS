@@ -115,7 +115,7 @@ function getDamage(poke1, poke2){
 
 }
 
-// finally compare type advantage/base states of pokemon
+// finally compare type advantage/base stat of pokemon
 function pokeCompare(){
 	//check if asyn is complete
 	if (pokeBuilt != 2){
@@ -131,10 +131,10 @@ function pokeCompare(){
 	var pk1damage = getDamage(Pokes[0],Pokes[1]);
 	var pk2damage = getDamage(Pokes[1],Pokes[0]);
 	if(pk1damage === pk2damage){
-		if(Pokes[0].states === Pokes[1].states){
+		if(Pokes[0].stat === Pokes[1].stat){
 			console.log(Pokes[0].name);
 		}
-		else if(Pokes[0].states > Pokes[1].states){
+		else if(Pokes[0].stat > Pokes[1].stat){
 			console.log(Pokes[0].name);
 		}
 		else{
